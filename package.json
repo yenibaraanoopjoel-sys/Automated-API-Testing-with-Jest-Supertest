@@ -1,0 +1,32 @@
+{
+  "name": "api-testing-jest-supertest",
+  "version": "1.0.0",
+  "description": "Automated API Testing with Jest and Supertest",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "jest --forceExit"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": ["**/tests/**/*.test.js"],
+    "detectOpenHandles": true,
+    "forceExit": true,
+    "bail": false,
+    "verbose": true
+  },
+  "keywords": ["jest", "supertest", "testing", "api"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.0.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.0",
+    "dotenv": "^16.0.3"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "supertest": "^6.3.3"
+  }
+}
